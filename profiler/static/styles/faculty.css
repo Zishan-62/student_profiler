@@ -1,0 +1,33 @@
+*{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(227, 196, 255);
+    font-family: 'BIZ UDPMincho', serif;
+}
+.one{
+    background-color: rgb(235, 235, 172);
+}
+.two{
+   
+    color: rgb(20, 213, 158)
+}
+a{
+    color: white;
+    padding: 15px;
+}
+.two{
+    color: blue;
+    padding: 15px;
+}
+.three{
+    color: blue;
+    padding: 15px;
+}
+.logout{
+    float:right;
+    color: blue;
+    font-size: xx-large;
+    text-decoration: underline;
+    position: relative;
+    top: -335px;
+}

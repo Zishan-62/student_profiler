@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{%static 'styles/faculty.css'  %}">
+  <link rel="preconnect" href="{%static 'https://fonts.googleapis.com' %}">
+  <link rel="preconnect" href="{%static 'https://fonts.gstatic.com' %}" crossorigin>
+  <link href="{%static 'https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap' %}" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+    </style>
+</head>
+<body>
+  <h1>Click on roll number to view details</h1>
+<h2>
+  <div class="detail">
+  <table style="width:100%" border="1px solid black" class="table">
+    <tr>
+      <th class="one">Roll No</th>
+      <th class="one">Name</th>
+    </tr>
+{% for i in profile %}
+<tr>
+  <td class="two"><a href="faculty_view/{{i.Roll_no}}" class="three">{{i.Roll_no}} <br></a> </td>
+  <td class="two">{{i.full_name}}</td>
+</tr>
+  
+  
+{% endfor %}
+</table>
+</div>
+<a href="logout" class="logout">logout</a></h2>
+</body>
+</html>

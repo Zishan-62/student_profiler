@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(186, 241, 243);
+}
+#logout{
+    float:right;
+    color: rgb(20, 20, 21);
+    font-size: xx-large;
+    text-decoration: underline;
+    position: relative;
+    top: -1275px;
+    right: 12px;
+}
+
+#logout:hover{
+    color: rgb(6, 20, 209);
+}
+.container{
+    font-size: xx-large;
+    width: 1200px;
+    height: 1150px;
+    background-color: white;
+}
+.fullname{
+    border: 2px solid black;
+
+   width: 480px;
+}
+#fullname{
+    position: relative;
+    float: left;
+}
+/* #rollno{
+    position: relative;
+    float: left; 
+} */
+.rollno{
+    position: relative;
+    right: 20px;
+}

@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(214, 241, 198);
+}
+.all{
+    font-size: large;
+    padding: 5px;
+    border: 2px solid rgb(214, 241, 198);
+}
+.container{
+    font-size: xx-large;
+    width: 1000px;
+    height: 1150px;
+    background-color: white;
+    
+    
+text-align: left;
+}
+.fname{
+    float: left;
+    position: absolute;
+}
+  #rollno{
+    
+    position: relative;
+    top: 0px;
+    left: 30%;
+}  
+#img{
+   float: right;
+   position: relative;
+   top: -230px;  
+    right: 5%; 
+}
+#ai{
+    position: relative;
+    left: 300px;
+    top: -110px;
+}
+#mobile{
+    float: right;
+    position: relative;
+    top: -185px;  
+     right: 5%; 
+ }
+ #add{
+    float: left;
+    position: absolute;
+    top: 390px;
+ }
+ #bg{
+    position: relative;
+    left: 300px;
+    top: -80px;
+ }
+ #member{
+    float: right;
+    position: relative;
+    top: -160px;  
+     right: 3%;  
+ }
+ #fo{
+    float: left;
+    position: absolute;
+    top: 500px;
+ }
+ #health{
+    position: relative;
+    left: 300px;
+    top: -287px;
+ }
+#travel{
+    float: right;
+    position: relative;
+    top: -365px;  
+     right: 5%; 
+}
+.mks{
+    padding: 5px;
+    
+}
+#mentor{
+    float: left;
+    position: absolute;
+    top: 810px;
+}
+#per{
+    position: relative;
+    left: 300px;
+    top: -57px;
+}
+#aoi{
+    float: right;
+    position: relative;
+    top: -223px;  
+     right: 5%; 
+}
+#internship{
+    float: right;
+    position: relative;
+     left: 200px; 
+    top: -60px;
+}
+.submit{
+    font-size: large;
+    position: relative;
+    left: 35%;
+    top: 30px;
+}
+.submit:hover ,.reset:hover{
+    cursor: pointer;
+    background-color: rgb(214, 241, 198);
+}
+.reset{
+    font-size: large;
+    position: relative;
+    left: 35%;
+    top: 30px;
+}
+.logout{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+}
+.logout:hover{
+    background-color: rgb(214, 241, 198);
+}

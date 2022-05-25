@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT_PROFILE</title>
+    <link rel="stylesheet" href="{%static 'styles/home.css'  %}">
+</head>
+<body><center>
+    
+       <div class="container">
+           <center>
+        <h1>STUDENT DATA ENTRY </h1>
+    </center>
+               <form action="{% url 'home' %}" method="post" enctype="multipart/form-data">
+                   <div class="form">
+                    {% csrf_token %}
+                    <!-- full name -->
+                    <div class="fname"><strong>Full Name</strong> <br> <input type="text" required placeholder="Enter your full name" name="full_name" class="all"></div>
+                    <!--ROLL NO -->
+                   <div class="form" id="rollno"><strong> Roll number </strong> <br>  <input type="text"required placeholder="Enter your Roll number" class="all" name="Roll_no" class="all" ></div> <br>
+                    <!--DATE OF BIRTH -->
+                   <div  id="dob">date of birth <br> <input type="date" name="birthdate" required class="all" format="yyyy-mm-dd" class="all"></div><br>
+                   <!-- image -->
+                   <div id="img"><strong>uplode your image</strong> <br><input type="file" required name="image" alt="submit" ></div>
+                   <!--ANNUAL INCOME-->
+                   <div id="ai">Annual income <br><input type="text"required placeholder="Enter your annual income"  name="annualin" class="all"></div>
+                    <!--MOBILE NUMBER -->
+                   <div id="mobile">Mobile number <br><input type="text" required minlength="10" maxlength="10" placeholder="enter your mobile number" required class="all" name="mobile_no" class="all"></div>
+                    <!--ADDRESS -->
+                   <div  id="add">Address  <br><input type="text" name="address" required placeholder="enter your address" class="all"></div>
+                   <!--BLOOD GROUP-->
+                   <div id="bg">Blood group <br><input type="text" name="bloodgroup" class="all" required placeholder="eg O+"  ></div>
+                   <!--NUMBER OF FAMILY MEMBERS-->
+                    <div id="member">Number of family members <br><input type="text" name="familymember" required pattern="[0-9]{2}"title="please enter only number field" class="all"></div>
+                    <!--FATHER'S OCCUPATION-->
+                    <div id="fo">Father's occupation <br><input type="text" name="fatheroccupation" required class="all"></div> <br>
+                    <!-- Table for marks -->
+                    
+                    <table style="width:100%" border="1px solid black" class="table">
+                        
+                        <tr>
+                          <th>Maths</th>
+                          <th>Analysis of Algorithm</th>
+                          <th>Operating System</th>
+                          <th>Microprocessor</th>
+                          <th>Database management system</th>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="maths"required placeholder="In cgpa" class="mks"></td>
+                          <td><input type="text" name="algo" required placeholder="In cgpa"class="mks"></td>
+                          <td><input type="text" name="operating" required placeholder="In cgpa" class="mks"></td>
+                          <td><input type="text" name="micro" required id="" placeholder="In cgpa"class="mks"></td>
+                          <td><input type="text" name="dbms" required id="" placeholder="In cgpa"class="mks"></td>
+                        </tr>
+                      </table>
+                    <!--HEALTH-->
+                    <div id="health">Health <br><input type="text"placeholder="eg poor/average/good" required class="all" name="health" ></div>
+                    <!--MENTOR -->
+                    <div id="mentor">Mentor <br><input type="text" required placeholder="name of your Mentor"class="all" name="mentor"></div>
+                    <!--DAILY TRAVEL HOURS -->
+                    <div id="travel">Daily travel hours <br><input type="text" class="all" required name="travel"></div>
+                    <!--PERCENTAGE -->
+                    <div id="per">Aggregate cgpa<br> <input type="text" placeholder="00.00cgpa" required class="all"name="cgpa"></div>
+                    <!--PROGRAMMING LANGUAGE -->
+                    <div id="lang"> Programming languages known <br> <input type="text" required placeholder="if not any enter none" class="all"name="language" ></div>
+                    <!--AREA OF INTEREST-->
+                    <div id="aoi">Area of interest <br><input type="text"class="all"required placeholder="eg.cyber security" name="areaofinterest"></div>
+                    <!--INTERNSHIP-->
+                    <div id="internship">Internships in field of <br> <input type="text"class="all" required placeholder="if not any enter none" name="internship"></div>
+                        
+                        <input type="hidden" value="{{ user.id }}" name="user">
+
+                   <input type="submit" class="submit">
+                   <input type="reset" class="reset">
+                   
+                </div>
+               </form>
+                <a href="logout" class="logout">logout</a>
+                {% for message in messages %}  
+                    <h1 style="color: aqua;"> {{ message  }} </h1> 
+                {% endfor %}
+               
+       </div> </center>
+</body>
+            
+
+
+</html>

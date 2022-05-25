@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profiler</title>
+    <link rel="stylesheet" href="{%static 'styles/student_profiler.css'  %}">
+</head>
+<body>     
+    <img src="{{ profile.image.url }}" alt="" height="140px"width="200px" class="image"> <br>
+    <center> <div class="container">
+      <div class="all">
+        
+          <div id="fullname"> <strong>FULL NAME:</strong></div> <div class="fullname"> {{profile.full_name}} </div>  <br>
+                  <div class="rollno"><strong> Roll Number:</strong>  {{profile.Roll_no}} <br></div>
+                  <div class="dob"><strong>  Date Of Birth: </strong>  {{profile.birthdate}} <br>
+                   <div class="ai"><strong> Annual Income: </strong>{{profile.annualin}} <br></div> 
+                  <div class="mobile"><strong>Mobile Number: </strong> {{profile.mobile_no}} <br></div> 
+                  <div class="add"><strong> Address:</strong> {{profile.address}} <br></div> 
+                   <div class="bg"><strong> Bloodgroup:  </strong>{{profile.bloodgroup}} <br></div> 
+                   <div class="member"><strong> No of Family Member:</strong>  {{profile.familymember}} <br></div> 
+                    <div class="fo"><strong> Father's Occupation:</strong> {{profile.fatheroccupation}} <br></div> 
+                    <div class="att"><strong> Attendence:</strong> {{profile.attendence}} <br></div></div>
+                    <table style="width:100%" border="1px solid black" class="table">
+                             
+                     <tr>
+                       <th>Maths</th>
+                       <th>Analysis of Algorithm</th>
+                       <th>Operating System</th>
+                       <th>Microprocessor</th>
+                       <th>Database management system</th>
+                     </tr>
+                     <tr> 
+                  <td> <div class="maths">  {{profile.maths}} <br></div> </td>
+                  <td> <div class="algo">  {{profile.algo}} <br></div> </td>
+                  <td> <div class="os">  {{profile.operating}} <br></div> </td>
+                  <td><div class="mp">  {{profile.micro}} <br></div> </td>
+                   <td> <div class="dbms"> {{profile.dbms}} <br></div> </td>
+                   </tr>
+                   </table>
+                    <div class="health"><strong> Health:</strong> {{profile.health}} <br></div> 
+                   <div class="mentor"><strong>  Mentor:</strong> {{profile.mentor}} <br></div> 
+                    <div class="travel"><strong> Daily hours Travel:</strong> {{profile.travel}} <br></div> 
+                   <div class="cgpa"><strong> CGPA:</strong>  {{profile.cgpa }} <br></div> 
+                   <div class="lang"><strong> Programming Languages Known:</strong>  {{profile.language}} <br></div> 
+                    <div class="aoa"><strong> Area of Intrest:</strong> {{profile.areaofinterest}} <br></div> 
+                    <div class="intern"><strong>Internship:</strong> {{profile.internship}} <br></div> 
+                 
+        </div>
+    </center>
+               <a href="{% url 'logout' %}" id="logout">logout</a><br>
+    
+
+</body>
+</html>

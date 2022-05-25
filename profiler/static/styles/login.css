@@ -1,0 +1,102 @@
+  body{
+color: rgb(160, 160, 160);
+box-sizing: border-box;
+background: linear-gradient(to right, rgb(211, 238, 55), rgba(37, 117, 252, 1))
+}
+.container1{
+    /* border: 2px solid red; */
+    width: 40%;
+     margin: 20px;
+    left: 28%; 
+    position: absolute;
+     top: 37px; 
+    height: 800px;
+    background-color: rgb(235, 233, 233);
+    border-radius: 12px;
+}
+
+
+.l1{
+    font-size: 70px;
+    color: rgb(18, 16, 16);
+    position: relative;
+    left: -10px;
+    text-align: center;
+    
+} 
+
+.susername{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    left: 12px;
+}
+
+
+.spass{
+    padding: 12px 15px;
+    border-radius: 12px;
+    float: center;
+    font-size: x-large;
+    border: 2px solid   rgb(211, 238, 55);
+    background-color: rgb(254, 246, 246); 
+    position: relative;
+    top: -60px;
+    width: 450px;
+    color: rgb(17, 16, 16);
+    
+}
+
+.qpass{
+    padding: 12px 15px;
+    border-radius: 12px;
+    float: center;
+    background-color: rgb(254, 252, 252); 
+    font-size: x-large;
+    border: 2px solid rgb(211, 238, 55) ;
+    position: relative;
+    left: -0px;
+    top: -70px;
+    width: 450px;
+    color: rgb(11, 10, 10);
+}
+.spass:hover{
+    border: 3px solid  rgba(37, 117, 252, 1) ;
+
+}
+.qpass:hover{
+    border: 3px solid  rgba(37, 117, 252, 1);
+}
+
+.submit{
+    font-size: x-large;
+    background-color: rgb(32, 31, 32);
+    border: 3px solid white;
+    color: white;
+    width: 200px;
+   padding-bottom: 8px;
+    padding-top: 08px;
+    
+}
+.submit:hover{
+    background-color: rgb(23, 110, 223);
+    color: white;
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+.par{
+    font-size: x-large;
+    position: relative;
+    text-align: center;
+    top: -40px;
+}
+.re{
+ text-align: center;
+ position: relative;
+ top: 200px;
+ font-size: x-large;
+ color: rgb(11, 11, 11);
+}
+.r{
+    color: rgb(138, 134, 134);
+    text-decoration: none;
+}

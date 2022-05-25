@@ -1,0 +1,119 @@
+body{
+    background-color: #336699;
+    box-sizing: border-box;
+background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+ 
+}
+.register{
+    width: 40%;
+     margin: 20px;
+    left: 28%; 
+    position: absolute;
+     top: 37px; 
+    height: 800px;
+    background-color: rgb(32, 31, 31);
+    border-radius: 12px;
+    color: white;
+}
+input{
+    background-color: rgb(32, 31, 31);
+    color: white;
+    border: 1px solid white;
+}
+.info{
+    font-size: medium;
+    text-align: center;
+    color: rgb(130, 130, 131);
+    padding: 2px;
+}
+.r{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: x-large;
+}
+.name{
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    width: 280px;
+    position: absolute;
+    top: 140px;
+    left: 25px;
+    height: 30px;
+}
+.lname{
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    position: absolute;
+    right: 60px;
+    top: 140px;
+    width: 280px;
+    height: 30px;
+}
+.uname{
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    width: 550px;
+    position: absolute;
+    top: 270px;
+    left: 25px;
+    height: 30px;
+}
+.email{
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 390px;
+    width: 550px;
+    height: 30px;
+    left: 25px;
+}
+.p{
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 500px;
+    left: 25px;
+    width: 550px;
+    height: 30px;
+    
+}
+.cp{
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 600px;
+    width: 550px;
+    height: 30px;
+    left: 25px;
+    
+}
+input:hover{
+    border: 3px solid white;
+}
+
+
+
+.reg{
+    font-size: 23px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 705px;
+    right: 200px;
+    width: 400px;
+    
+    color: white;
+}
+.reg:hover{
+    font-size: 23px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+} 

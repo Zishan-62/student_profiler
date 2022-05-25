@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    {% load static %}
+   
+    <link rel="stylesheet" href=" {%static 'styles/register.css'%} ">
+</head>
+<body>
+    <script>
+        function lettersOnly(input){
+            var regex = /[^a-z]/gi;
+            input.value = input.value.replace(regex,"");
+        }
+</script>
+    <div class="register">
+    <form action="register" method="post">
+        {% csrf_token %}
+        <div class="r">-----Registration Form----- </div>
+       <div class="info">create your account. it's free and only takes a minute.</div> 
+        <div class="form">
+        <input type="text" name="first_name" placeholder="First Name" class="name" onkeyup="lettersOnly(this)" required><br>
+       <input type="text" name="last_name" placeholder="Last Name" class="lname" onkeyup="lettersOnly(this)" required><br>
+      <input type="text" name="username" placeholder="Username" class="uname" required><br>
+       <input type="email" name="email" placeholder="Email" class="email" required><br>
+       <input type="password" name="password1" placeholder="Password" class="p" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+       title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+       <input type="password" name="password2" placeholder="Confirm Password" class="cp" required><br>
+        <input type="submit" value="register" class="reg" >
+    </div>
+    </form>
+    </div>
+    <div>
+        {% for message in messages %}
+        <h3> {{ message }} </h3>
+        {% endfor %}
+    </div>
+</body>
+</html>
